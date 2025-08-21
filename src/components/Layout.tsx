@@ -14,7 +14,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <div>
       <nav className="bg-white shadow flex items-center px-4 py-2">
   <Link to="/journal" className="font-bold text-xl mr-4">Journal</Link>
-        <Link to="/studies" className="mr-4">Studies</Link>
+  <Link to="/hub" className="mr-4">Hub</Link>
+  <Link to="/studies" className="mr-4">Studies</Link>
         <Link to="/post/new" className="mr-4">+ New Post</Link>
         <Link to="#" className="mr-4">Import/Export</Link>
         <div className="flex-1" />
