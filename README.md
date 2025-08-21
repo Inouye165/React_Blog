@@ -1,5 +1,5 @@
 # React_Blog
-
+2025-08-20
 A Personal Learning Journal built with Vite, React, TypeScript, TailwindCSS, and React Router.
 
 ## Repository

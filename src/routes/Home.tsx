@@ -11,7 +11,10 @@ export default function Home() {
   }, []);
   return (
     <div>
-      <h1 className="text-2xl font-bold mb-4">Journal</h1>
+      <div className="flex items-center justify-between">
+        <h1 className="text-2xl font-bold mb-4">Journal</h1>
+        <a href="/hub" className="text-sm text-neutral-600 underline">Back to Hub</a>
+      </div>
       {posts.length === 0 ? (
         <EmptyState message="Write your first post!" cta={<a href="/post/new" className="text-blue-600 underline">New Post</a>} />
       ) : (

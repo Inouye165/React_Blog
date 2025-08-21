@@ -1,5 +1,5 @@
 import { Database, DatabaseSchema, Post, StudyItem } from "./models";
-import { v4 as uuidv4 } from "uuid";
+// import { v4 as uuidv4 } from "uuid";
 
 const STORAGE_KEY = "learning_journal_v1";
 const VERSION = 1;

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { getAll, upsertStudy, deleteStudy } from "../data/db";
-import { StudyItem } from "../data/models";
+// import { StudyItem } from "../data/models";
 import Tag from "../components/Tag";
 import EmptyState from "../components/EmptyState";
 
@@ -10,6 +10,7 @@ const tabs = ["book", "course", "specialization", "video"] as const;
 export default function Studies() {
   const [tab, setTab] = useState<typeof tabs[number]>("course");
   const [studies, setStudies] = useState(getAll().studies);
+
 
   function handleComplete(id: string) {
     const item = studies.find(s => s.id === id);
